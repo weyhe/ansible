@@ -1,0 +1,14 @@
+---
+- name: Kør kommandoen id
+  hosts: all
+  gather_facts: no
+
+  tasks:
+    - name: Vis bruger-id
+      command: id
+      register: id_output
+
+    - name: Print output
+      debug:
+        var: id_output.stdout
+
