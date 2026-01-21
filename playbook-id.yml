@@ -1,7 +1,7 @@
 ---
 - name: Kør kommandoen id
   hosts: all
-  gather_facts: no
+  gather_facts: yes
 
   tasks:
     - name: Vis bruger-id
